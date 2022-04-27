@@ -1,0 +1,548 @@
+﻿<!DOCTYPE html>
+<html lang="he">
+<head>
+
+    <meta charset="utf-8" />
+    <title>מסע'לה תה | נפלאות התה</title>
+    <meta name="description" content="עמוד התוכן של נפלאות התה" />
+    <meta name="keywords" content="משפחות תה, תה צהוב, תה שחור, תה אולונג, תה אדום,תה פואר, תה לבן,תה ירוק, חליטות , , , " />
+    <meta name="author" content="צוות מסע'לה תה- יערה דה-פריס, נועה כהן, עדי סמואל וספיר אשר" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <link rel="icon" href="images/design/cupLogo.png" />
+
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div id="headdesign">
+                <a href="index.html" id="logohiper"><div id="logo"><h1 alt="דף הבית מסעלה תה"></h1></div></a>
+                <p>מסע תה מסביב לעולם</p>
+            </div>
+            <nav id="navigation" role="navigation" title="תפריט ראשי">
+                <ul id="menu">
+                    <li class="left"><a href="index.html">דף הבית</a></li>
+                    <li class="left">
+                        <a href="#">מדינות</a>
+                        <ul id="country">
+                            <li><a href="#">אוסטרליה</a><span class="loc" Aria-hidden=true></span></li>
+                            <li><a href="#">הודו</a><span class="loc" Aria-hidden=true></span></li>
+                            <li><a href="#">יפן</a><span class="loc" Aria-hidden=true></span></li>
+                            <li><a href="#">פורטוגל</a><span class="loc" Aria-hidden=true></span></li>
+                            <li class="allowed"><a href="england.html" class="allowed">אנגליה</a><span class="loc" Aria-hidden=true></span></li>
+                            <li><a href="#">טורקיה</a><span class="loc" Aria-hidden=true></span></li>
+                            <li><a href="#">מצרים</a><span class="loc" Aria-hidden=true></span></li>
+                            <li><a href="#">פרו</a><span class="loc" Aria-hidden=true></span></li>
+                            <li><a href="#">ארגנטינה</a><span class="loc" Aria-hidden=true></span></li>
+                            <li><a href="#">טיבט</a><span class="loc" Aria-hidden=true></span></li>
+                            <li><a href="#">מרוקו</a><span class="loc" Aria-hidden=true></span></li>
+                            <li><a href="#">פרס</a><span class="loc" Aria-hidden=true></span></li>
+                            <li><a href="#">דרום אפריקה</a><span class="loc" Aria-hidden=true></span></li>
+                            <li><a href="#">טיוואן</a><span class="loc" Aria-hidden=true></span></li>
+                            <li><a href="#">סין</a><span class="loc" Aria-hidden=true></span></li>
+                            <li><a href="#">קניה</a><span class="loc" Aria-hidden=true></span></li>
+                        </ul>
+                    </li>
+                    <li class="left">
+                        <a href="teaType.html">נפלאות התה</a>
+                        <ul id="Families">
+                            <li><a href="teaType.html#b">תה שחור</a><span class="loc" Aria-hidden=true></span></li>
+                            <li><a href="teaType.html#w">תה לבן</a><span class="loc" Aria-hidden=true></span> </li>
+                            <li><a href="teaType.html#g">תה ירוק</a><span class="loc" Aria-hidden=true></span> </li>
+                            <li><a href="teaType.html#o">תה אלונוג</a><span class="loc" Aria-hidden=true></span></li>
+                            <li><a href="teaType.html#r">תה אדום</a><span class="loc" Aria-hidden=true></span></li>
+                            <li><a href="teaType.html#y">תה צהוב</a><span class="loc" Aria-hidden=true></span></li>
+                            <li><a href="teaType.html#i">חליטות התה</a><span class="loc" Aria-hidden=true></span></li>
+
+                        </ul>
+                    </li>
+                    <li class="left"><a href="#" class="notallowed">לחשוב מחוץ לכוס</a></li>
+                    <li><a href="#" class="notallowed">טיפים לכוס המושלמת</a></li>
+                </ul>
+            </nav>
+            <script>
+                window.onscroll = function () { scrollFunction() };
+                function scrollFunction() {
+                    if (document.documentElement.scrollTop > 120) {
+                        document.getElementById("navigation").style.top = "0px";
+                        document.getElementById("navigation").style.position = "fixed";
+                    } else {
+                        document.getElementById("navigation").style.top = "120px";
+                        document.getElementById("navigation").style.position = "absolute";
+                    }
+                    if (document.documentElement.scrollTop > 500 && document.documentElement.scrollTop < 5000 ) {
+                        document.getElementById("navfamilysUP").style.top = "30px";
+                        document.getElementById("navfamilysUP").style.display = "inline-block";
+
+                    } else {
+                        document.getElementById("navfamilysUP").style.top = "-100px";
+                    }
+                }
+            </script>
+            <br /><br /><br />
+            <nav id="navfamilysUP" role="navigation" aria-label="תפריט ניווט לסוגי התה השונים בדף">
+                <ul>
+                    <li>
+                        <a href="#g">
+                            <img src="images/familys/teagreen.png" class="sizeimgfamilyUP" />
+                            <p>ירוק</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#b">
+                            <img src="images/familys/teablack.png" class="sizeimgfamilyUP" />
+                            <p>שחור</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#o" target="_self">
+                            <img src="images/familys/teaoolung.png" class="sizeimgfamilyUP" />
+                            <p>אולונג</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#r" target="_self">
+                            <img src="images/familys/teared.png" class="sizeimgfamilyUP" />
+                            <p> אדום </p>
+
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#f" target="_self">
+                            <img src="images/familys/teafu_ar.png" class="sizeimgfamilyUP" />
+                            <p>פו-אר</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#w" target="_self">
+                            <img src="images/familys/teawhite.png" class="sizeimgfamilyUP" />
+                            <p>לבן</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#y" target="_self">
+                            <img src="images/familys/teayellow.png" class="sizeimgfamilyUP" />
+                            <p>צהוב</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#i" target="_self">
+                            <img src="images/familys/teaInfusions.png" class="sizeimgfamilyUP" />
+                            <p>חליטות</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <article id="z_level_index" role="main">
+            <img class="pictureH1" src="images/familys/aroma.png" alt="" />
+            <h1 id="tea-h1">נפלאות התה</h1>
+
+            <nav id="navfamilys" role="navigation" aria-label="תפריט ניווט לסוגי התה השונים בדף">
+                <ul>
+                    <li>
+                        <p>ירוק</p>
+                        <a href="#g">
+                            <span class="emptyglass"></span>
+                            <img src="images/familys/teagreen.png" class="sizeimgfamily" aria-label="תמונה של כוס תה ירוק" />
+                            <p>מונע את הקמטים</p>
+                        </a>
+                    </li>
+                    <li>
+                        <p>שחור</p>
+                        <a href="#b">
+                            <span class="emptyglass"></span>
+                            <img src="images/familys/teablack.png" class="sizeimgfamily" aria-label="תמונה של כוס תה שחור" />
+                            <p>מעיר אותי</p>
+                        </a>
+                    </li>
+                    <li>
+                        <p>אולונג</p>
+                        <a href="#o" target="_self">
+                            <span class="emptyglass"></span>
+                            <img src="images/familys/teaoolung.png" class="sizeimgfamily" aria-label="תמונה של כוס תה אולונג" />
+                            <p>מעולה להאנגובר</p>
+                        </a>
+                    </li>
+                    <li>
+                        <p>אדום</p>
+                        <a href="#r" target="_self">
+                            <span class="emptyglass"></span>
+                            <img src="images/familys/teared.png" class="sizeimgfamily" aria-label="תמונה של כוס תה אדום" />
+                            <p>
+                                לא כמו כולם
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+
+                        <p>פו-אר</p>
+                        <a href="#f" target="_self">
+                            <span class="emptyglass"></span>
+                            <img src="images/familys/teafu_ar.png" class="sizeimgfamily" aria-label="תמונה של כוס תה פו-אר" />
+                            <p>משובח כמו יין</p>
+                        </a>
+                    </li>
+                    <li>
+                        <p>לבן</p>
+                        <a href="#w" target="_self">
+                            <span class="emptyglass"></span>
+                            <img src="images/familys/teawhite.png" class="sizeimgfamily" aria-label="תמונה של כוס תה לבן" />
+                            <p>לחיוך מושלם</p>
+                        </a>
+                    </li>
+                    <li>
+                        <p>צהוב</p>
+                        <a href="#y" target="_self">
+                            <span class="emptyglass"></span>
+                            <img src="images/familys/teayellow.png" class="sizeimgfamily" aria-label="תמונה של כוס תה צהוב" />
+                            <p>משובח ביותר</p>
+                        </a>
+                    </li>
+                    <li>
+                        <p>חליטות</p>
+                        <a href="#i" target="_self">
+                            <span class="emptyglass"></span>
+                            <img src="images/familys/teaInfusions.png" class="sizeimgfamily" aria-label="תמונה של כוס חליטות" />
+                            <p>מי אני?</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+
+            <div class="teabackground" alt="מקור צמח התה">
+                <P> התה הקלאסי מופק מצמח אחד שנקרא "<strong>קמליה סינית</strong>"- צמח התה. לקמליה שני תת-מינים מרכזיים: האחד מקורו בסין ונהוג לכנותו תה סיני, והשני מקורו בהודו ונהוג לכנותו תה אסאם. מה שמבדיל את <strong>משפחות התה</strong> זו מזו הוא שלב התסיסה המשפיע על ההרכב הכימי והתכונות של התה. הודות לתפוצתו הנרחבת, נהוג למנות עם משפחות התה גם את התה האדום, על אף שהוא הוא מופק מחליטת הצמח הדרום אפריקאי "רויבוס". מגוון משקאות המופקים מצמחים שאינם צמח התה- נקראים למעשה חליטות צמחים ולא "תה" כפי שנהוג לחשוב. שלושת המרכיבים העיקריים בצמח המעניקים לתה יתרונות בריאותיים הם מולקולות ה- EGCG נוגדות החמצון, חומצות אמיניות וקפאין. <br /> <i class="fas fa-chevron-down" aria-hidden="true"></i></P>
+                <img id="teafield" src="images/familys/teafield.png" aria-label="תמונת שדה תה" />
+                <img id="camilla" src="images/familys/ChineseCamilla.png" aria-label="תמונת צמח קמילה סינית" />
+                <p id="teafieldtexe">שדה תה</p>
+                <p id="camillatexe">צמח קמליה סינית</p>
+
+            </div>
+
+            <div id="familieinfo">
+                <div class="tea">
+                    <a id="push" name="g"></a>
+                    <h2>תה ירוק</h2>
+                    <img class="teaimg" src="images/familys/teagreen.png" aria-label="תמונה של כוס תה ירוק" />
+                    <span class="location"></span>
+                    <span class="aroma"></span>
+                    <span class="procses" id="procses50"></span>
+                    <span class="benefits" id="benefits130"></span>
+                    <div class="plocation">
+                        <p>
+                            <strong>מדינות עיקריות:</strong>
+                            מרוקו, מצרים, קניה.
+                        </p>
+
+                    </div>
+                    <div class="Pfamily">
+                        <p>
+                            <strong>ארומה:</strong> מתוקה בשילוב מרירות קלה.
+                        </p>
+                        <br /><br />
+                        <p>
+                            <strong>תהליך:</strong> העלים עוברים הליך מהיר של ייבוש קל, גלגול לצורה המבוקשת וחימום בטמפרטורה גבוהה.
+                        </p>
+                        <br /><br />
+                        <p>
+                            <strong>יתרונות בריאותיים:</strong> טיפול בשלשול קל, חיזוק במקרים של חולשה, זירוז פעילות הכליות (משתן), מרכיב בדיאטות המיועדות להורדה במשקל, שימוש כמשקה מעורר.
+
+                        </p>
+                    </div>
+                    <div class="greentext">
+                        <p>
+                            תה ירוק נחשב כמשפר את עור הפנים- הודות לכמות גבוהה של נוגדי חמצון שיש בו
+                        </p>
+                    </div>
+                </div>
+
+
+                <div id="teablack" class="tea">
+                    <a id="push" name="b"></a>
+                    <h2>תה שחור</h2>
+                    <img class="teaimg" src="images/familys/teablack.png" aria-label="תמונה של כוס תה שחור" />
+                    <span class="location"></span>
+                    <span class="aroma"></span>
+                    <span class="procses" id="procses50"></span>
+                    <span class="benefits" id="benefits130"></span>
+                    <div class="plocation">
+                        <p>
+                            <strong>מדינות עיקריות:</strong>
+                            סין, אנגליה, מצרים.
+                        </p>
+                    </div>
+                    <div class="Pfamily">
+                        <p>
+                            <strong>ארומה:</strong> חזקה, עשירה, מעושנת מעט.
+
+                        </p>
+                        <br /><br />
+                        <p>
+                            <strong>תהליך:</strong> העלים עוברים תהליך חמצון במשך שבועיים עד חודש ולאחר מכן ייבוש.
+                        </p>
+                        <br /><br />
+                        <p>
+                            <strong>יתרונות בריאותיים:</strong> מסייע בפעולות עיכול, מונע ריח רע מהפה, מסלק רעלים מהגוף ומסייע נגד דיכאון וכאבי ראש, תורם להפחתת הכולסטרול הרע, מקטין סיכויים לשבץ ומחלות לב ואף עוזר לגוף להחלים לאחר התקף לב.
+
+                        </p>
+                    </div>
+                    <div class="crametext">
+                        <p>
+                            עייפים? התה השחור מכיל כמות גבוהה של קפאין ולכן נחשב מעורר!
+                        </p>
+                        <span id="coffe"></span>
+                    </div>
+                </div>
+
+                <div id="teaoolung" class="tea">
+                    <a id="push" name="o"></a>
+                    <h2>תה אולונג</h2>
+                    <img class="teaimg" src="images/familys/teaoolung.png" aria-label="תמונה של כוס תה אולונג" />
+                    <span class="location"></span>
+                    <span class="aroma" id="aromateaoolung"></span>
+                    <span class="procses" id="procsesoolung"></span>
+                    <span class="benefits" id="benefits190"></span>
+                    <div class="plocation">
+                        <p>
+                            <strong>מדינות עיקריות:</strong>
+                            טייוואן, סין.
+                        </p>
+                    </div>
+                    <div class="Pfamily">
+                        <p>
+                            <strong>ארומה:</strong> אולונג כהה- עשירה, פירותית, מזכירה מעט דבש.
+                            <br />
+                            אולונג בהיר- פירחונית וקלילה.
+
+                        </p>
+                        <br /><br />
+                        <p>
+                            <strong>תהליך:</strong> העלים עוברים חמצון למחצה. קיים אולונג כהה העובר סיומת של אפייה בחום נמוך למשך שעות ארוכות, ואולונג בהיר שאינו עובר תהליך זה. עליו מסולסלים, מקופלים או מכודררים.
+
+                        </p>
+                        <br /><br />
+                        <p>
+                            <strong>יתרונות בריאותיים:</strong> מעודד עיכול ומפחית ספיגת שומנים בגוף, מקל על תשישות נפש, סחרחורת וישנוניות, תחושת כבדות בגוף וקושי להתרכז ומסייע לטיפול בבצקת.
+
+                        </p>
+                    </div>
+                    <div class="greentext">
+                        <p>
+                            שתית קצת יותר מדי?
+                            תה אולונג יעזור להעביר את ההנגאובר
+
+                        </p>
+                    </div>
+                </div>
+
+
+                <div id="teared" class="tea">
+                    <a id="push" name="r"></a>
+                    <h2>תה אדום</h2>
+                    <img class="teaimg" src="images/familys/teared.png" aria-label="תמונה של כוס תה אדום" />
+                    <span class="location"></span>
+                    <span class="aroma"></span>
+                    <span class="procses" id="procsesred"></span>
+                    <span class="benefits" id="benefitsred"></span>
+                    <div class="plocation">
+                        <p>
+                            <strong>מדינות עיקריות:</strong>
+                            דרום אפריקה.
+                        </p>
+                    </div>
+                    <div class="Pfamily">
+                        <p>
+                            <strong>ארומה:</strong> אדמתית, עשירה ומתוקה מעט.
+
+                        </p>
+                        <br /><br />
+                        <p>
+                            <strong>תהליך:</strong> עלי הצמח עוברים חמצון ותסיסה.
+
+                        </p>
+                        <br /><br />
+                        <p>
+                            <strong>יתרונות בריאותיים:</strong> מחזק את המערכת החיסונית, מאט תהליכי הזדקנות, מסייע בהגנה על השיניים (מכיוון שהוא מקור טבעי לפלואוריד), מקל על בעיות עיכול והתכווצויות בטן, מקל על תופעות אלרגיות שונות, מרגיע ומסייע לשינה.
+
+                        </p>
+                    </div>
+                    <div class="crametext">
+                        <p>
+                            תה אדום לא עשוי מצמח התה, זהו כינוי שניתן לחליטה של צמח הרויבוס, שמוצאו בדרום אפריקה.
+
+                        </p>
+                        <span id="plant"></span>
+                    </div>
+                </div>
+
+
+                <div id="teafu_ar" class="tea">
+                    <a id="push" name="f"></a>
+                    <h2>תה פו-אר</h2>
+                    <img class="teaimg" src="images/familys/teafu_ar.png" aria-label="תמונה של כוס תה פו-אר" />
+                    <span class="location"></span>
+                    <span class="aroma"></span>
+                    <span class="procses" id="procses50"></span>
+                    <span class="benefits" id="benefits190"></span>
+                    <div class="plocation">
+                        <p>
+                            <strong>מדינות עיקריות:</strong>
+                            סין.
+                        </p>
+                    </div>
+                    <div class="Pfamily">
+
+                        <p>
+                            <strong>ארומה:</strong> עשירה, טעם המזכיר פטריות ואדמה.
+
+                        </p>
+                        <br /><br />
+                        <p>
+                            <strong>תהליך:</strong> העלים עוברים חמצון ארוך, לאחר מכן ייבוש ולבסוף יישון- ממש כמו יין. היישון נעשה באוויר הפתוח, בחדרים עם לחות גבוהה ורוח, ויוצר שינויים בריח התה ובטעמיו. העלים המיובשים עוברים חמצון נוסף ותהליכי תסיסה.
+
+
+                        </p>
+                        <br /><br />
+                        <p>
+                            <strong>יתרונות בריאותיים:</strong> הפחתת כולסטרול, סיוע לעיכול, מפחית הנגאובר (חמרמורת), משפר פעילות טחול וקיבה.
+
+                        </p>
+                    </div>
+                    <div class="greentext">
+                        <p>
+                            כמו יין, תה פו-אר משתבח עם השנים! ככל שזמן היישון של העלים ארוך יותר- התה נחשב ליוקרתי יותר
+
+                        </p>
+                        <span id="wine"></span>
+                    </div>
+                </div>
+
+
+                <div id="teawhite" class="tea">
+                    <a id="push" name="w"></a>
+                    <h2>תה לבן</h2>
+                    <img class="teaimg" src="images/familys/teawhite.png" aria-label="תמונה של כוס תה לבן" />
+                    <span class="location"></span>
+                    <span class="aroma"></span>
+                    <span class="procses" id="procses50"></span>
+                    <span class="benefits" id="benefits190"></span>
+                    <div class="plocation">
+                        <p>
+                            <strong>מדינות עיקריות:</strong>
+                            קניה, סין, יפן.
+                        </p>
+                    </div>
+                    <div class="Pfamily">
+                        <p>
+                            <strong>ארומה:</strong> עדינה, מעט מתוקה.
+
+                        </p>
+                        <br /><br />
+                        <p>
+                            <strong>תהליך:</strong> העלים עוברים עיבוד מינימלי הכולל ייבוש איטי בטמפרטורות נמוכות ובניגוד למשפחות התה האחרות- ללא גלגול העלים. צורתו המקובלת דחוסה והוא מיועד להשבחה ע״י יישון בשל תסיסה איטית ומתמשכת גם לאחר האריזה.
+
+
+                        </p>
+                        <br /><br />
+                        <p>
+                            <strong>יתרונות בריאותיים:</strong>  מכיל כמות גדולה במיוחד של נוגדי חמצון, מחסל חיידקים ווירוסים, משפר שלווה, ריכוז וערנות.
+
+                        </p>
+                    </div>
+                    <div class="crametext">
+                        <p>
+                            תה לבן מונע הצטברות רובד בשיניים אז אם אתם רוצים חיוך מושלם- זה התה בשבילכם
+                        </p>
+                    </div>
+                </div>
+
+
+                <div id="teayellow" class="tea">
+                    <a id="push" name="y"></a>
+                    <h2>תה צהוב</h2>
+                    <img class="teaimg" src="images/familys/teayellow.png" aria-label="תמונה של כוס תה צהוב" />
+                    <span class="location"></span>
+                    <span class="aroma"></span>
+                    <span class="procses" id="procses50"></span>
+                    <span class="benefits" id="benefits190"></span>
+                    <div class="plocation">
+                        <p>
+                            <strong>מדינות עיקריות:</strong>
+                            מצרים, קניה.
+                        </p>
+                    </div>
+
+                    <div class="Pfamily">
+                        <p>
+                            <strong>ארומה:</strong> רכה וקטיפתית.
+
+                        </p>
+                        <br /><br />
+                        <p>
+                            <strong>תהליך:</strong> העלים עוברים הליך מהיר של ייבוש קל, גלגול לצורה המבוקשת וחימום בטמפרטורה גבוהה, נוסף על כך עובר תהליך הנקרא "הצהבה" בו עוטפים ומאדים אותו וכתוצאה מהליך זה עובר תהליך חמצון איטי.
+
+
+                        </p>
+                        <br /><br />
+                        <p>
+                            <strong>יתרונות בריאותיים:</strong> עשיר בנוגדי חמצון, מסייע להפחתה במשקל, תורם לבריאות הפה, מסייע לבעיות בכבד, עוזר לדלקות מעיים.
+
+                        </p>
+                    </div>
+                    <div class="greentext">
+                        <p>
+                            מיוצר רק מן השיחים המשובחים ביותר, במשך זמן רב היה נחלתם של הקיסר והאצולה.
+                        </p>
+                        <span id="crown"></span>
+                    </div>
+                </div>
+
+                <div id="teaInfusions" class="tea">
+                    <a id="push" name="i"></a>
+                    <h2>חליטות תה</h2>
+                    <img class="teaimg" src="images/familys/teaInfusions.png" aria-label="תמונה של כוס חליטה של תה" />
+                    <div class="Pfamily">
+
+                        <p id="infusions">
+                            מגוון משקאות המופקים מצמחים שאינם צמח התה- נקראים למעשה <strong>חליטות</strong> צמחים ולא "תה" כפי שנהוג לחשוב.
+                            החליטה היחידה שזכתה להכלל יחד עם משפחות התה היא חליטת הצמח הדרום אפריקאי "רויבוס"- או תה אדום, הודות לתפוצתו הנרחבת.
+                            <br /><br />
+                            <strong> ומהם היתרונות הבריאותיים שתוכלו להפיק מחליטות?</strong>
+                            <img id="teaArrow" src="images/familys/arrow2.png" alt="" />
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="garden" alt="יצוג אינטראקטיבי -יתרונות בריאותים חליטות">
+                <iframe src="interactiveGarden/GINA.html" frameBorder="0" allowfullscreen="">Browser not compatible.</iframe>
+            </div>
+        </article>
+
+        <!--  footer -->
+        <br /> <br />
+        <footer role="contentinfo">
+            <nav id="navfooter" role="navigation" aria-label="תפריט ניווט תחתון">
+                <span id="miniLogo"></span>
+                <ul>
+                    <li class="leftie"><a href="about.html" target="_self">אודות</a></li>
+                    <li class="leftie"><a href="siteMap.html" target="_self">מפת אתר</a></li>
+                    <li><a href="contactUs.html" target="_self">צור קשר</a></li>
+                </ul>
+                <p>© כל הזכויות שמורות לצוות מסע'לה תה</p>
+            </nav>
+        </footer>
+    </div>
+</body>
+</html>

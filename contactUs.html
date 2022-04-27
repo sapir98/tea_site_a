@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html lang="he">
+<head>
+
+    <meta charset="utf-8" />
+    <title>מסע'לה תה | צור קשר</title>
+    <meta name="description" content="עמוד צור קשר" />
+    <meta name="keywords" content="אימייל, תה " />
+    <meta name="author" content="צוות מסע'לה תה- יערה דה-פריס, נועה כהן, עדי סמואל וספיר אשר" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <link rel="icon" href="images/design/cupLogo.png" />
+
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div id="headdesign">
+                <a href="index.html" id="logohiper"><div id="logo"><h1 alt="דף הבית מסעלה תה"></h1></div></a>
+                <p>מסע תה מסביב לעולם</p>
+            </div>
+            <nav id="navigation" role="navigation" title="תפריט ראשי">
+                <ul id="menu">
+                    <li class="left"><a href="index.html">דף הבית</a></li>
+                    <li class="left">
+                        <a href="#">מדינות</a>
+                        <ul id="country">
+                            <li><a href="#">אוסטרליה</a><span class="loc" Aria-hidden=true></span></li>
+                            <li><a href="#">הודו</a><span class="loc" Aria-hidden=true></span></li>
+                            <li><a href="#">יפן</a><span class="loc" Aria-hidden=true></span></li>
+                            <li><a href="#">פורטוגל</a><span class="loc" Aria-hidden=true></span></li>
+                            <li class="allowed"><a href="england.html" class="allowed">אנגליה</a><span class="loc" Aria-hidden=true></span></li>
+                            <li><a href="#">טורקיה</a><span class="loc" Aria-hidden=true></span></li>
+                            <li><a href="#">מצרים</a><span class="loc" Aria-hidden=true></span></li>
+                            <li><a href="#">פרו</a><span class="loc" Aria-hidden=true></span></li>
+                            <li><a href="#">ארגנטינה</a><span class="loc" Aria-hidden=true></span></li>
+                            <li><a href="#">טיבט</a><span class="loc" Aria-hidden=true></span></li>
+                            <li><a href="#">מרוקו</a><span class="loc" Aria-hidden=true></span></li>
+                            <li><a href="#">פרס</a><span class="loc" Aria-hidden=true></span></li>
+                            <li><a href="#">דרום אפריקה</a><span class="loc" Aria-hidden=true></span></li>
+                            <li><a href="#">טיוואן</a><span class="loc" Aria-hidden=true></span></li>
+                            <li><a href="#">סין</a><span class="loc" Aria-hidden=true></span></li>
+                            <li><a href="#">קניה</a><span class="loc" Aria-hidden=true></span></li>
+                        </ul>
+                    </li>
+                    <li class="left">
+                        <a href="teaType.html">נפלאות התה</a>
+                        <ul id="Families">
+                            <li><a href="teaType.html#b">תה שחור</a><span class="loc" Aria-hidden=true></span></li>
+                            <li><a href="teaType.html#w">תה לבן</a><span class="loc" Aria-hidden=true></span> </li>
+                            <li><a href="teaType.html#g">תה ירוק</a><span class="loc" Aria-hidden=true></span> </li>
+                            <li><a href="teaType.html#o">תה אלונוג</a><span class="loc" Aria-hidden=true></span></li>
+                            <li><a href="teaType.html#r">תה אדום</a><span class="loc" Aria-hidden=true></span></li>
+                            <li><a href="teaType.html#y">תה צהוב</a><span class="loc" Aria-hidden=true></span></li>
+                            <li><a href="teaType.html#i">חליטות התה</a><span class="loc" Aria-hidden=true></span></li>
+
+                        </ul>
+                    </li>
+                    <li class="left"><a href="#" class="notallowed">לחשוב מחוץ לכוס</a></li>
+                    <li><a href="#" class="notallowed">טיפים לכוס המושלמת</a></li>
+                </ul>
+            </nav>
+            <script>
+                window.onscroll = function () { scrollFunction() };
+                function scrollFunction() {
+                    if (document.documentElement.scrollTop > 120) {
+                        document.getElementById("navigation").style.top = "0px";
+                        document.getElementById("navigation").style.position = "fixed";
+                    } else {
+                        document.getElementById("navigation").style.top = "120px";
+                        document.getElementById("navigation").style.position = "absolute";
+                    }
+                }
+            </script>
+            <br /><br /><br />
+
+        </header>
+        <article id="z_level_index" role="main">
+            <img src="images/contact/headerPicture.png" class="pictureH1" alt="" />
+            <h1>דברו איתנו</h1>
+            <form>
+                <h2>רוצים לספר לנו מה חשבתם? יש לכם  רעיונות נוספים?<br />סתם מתחשק לכם לשתף אותנו בתה האהוב עליכם? ספרו לנו!</h2>
+                <p style="font-size: 14pt; line-height: 150%"><span class="asterix">*</span> שדה חובה.</p>
+                <br />
+                <label for="firstName" required aria-required="true">
+                    <span class="asterix">*</span> שם פרטי
+                    <br />
+                    <input type="text" id="firstName">
+                </label>
+                <br />
+                <br />
+                <label for="lastName" required aria-required="true">
+                    <span class="asterix">*</span> שם משפחה
+                    <br />
+                    <input type="text" id="lastName" />
+                </label>
+                <br />
+                <br />
+                <label for="male" required aria-required="false">
+                    מין
+                    <br />
+                    <input type="radio" id="male" name="gender" /> זכר
+                </label>
+                <br />
+                <label for="female" required aria-required="false">
+                    <input type="radio" id="female" name="gender" /> נקבה
+                </label>
+                <br />
+                <br />
+                <label for="favoriteTea" required aria-required="false">
+                    נשמח שתספרו לנו - מהו התה האהוב עליכם?
+                    <br />
+                    <select id="favoriteTea">
+                        <option value="default">בחרו סוג תה</option>
+                        <option value="2">תה שחור</option>
+                        <option value="3">תה אדום</option>
+                        <option value="4">תה אולונג</option>
+                        <option value="5">תה פו-אר</option>
+                        <option value="6">תה לבן</option>
+                        <option value="7">תה צהוב</option>
+                        <option value="8">תה ירוק</option>
+                        <option value="9">חליטות צמחים</option>
+                    </select>
+                </label>
+                <br />
+                <br />
+                <label for="email" required aria-required="true">
+                    <span class="asterix">*</span> דואר אלקטרוני
+                    <br />
+                    <input type="text" id="email" placeholder="email@gmail.com" style="font-family:Candara" />
+                </label>
+                <br />
+                <br />
+                <label for="myTextarea">
+                    <span class="asterix">*</span> מה תרצו להגיד לנו?
+                </label>
+                <br />
+                <textarea id="myTextarea" placeholder="כתבו את תוכן ההודעה שלכם" style="font-family:Gisha" cols="50" rows="2" required aria-required="true"></textarea>
+                <br />
+                <br />
+                <label for="sendForm">
+                    <input type="submit" id="sendForm" value="שלח" />
+                </label>
+                <br />
+            </form>
+            <span id="honey"></span>
+        </article>
+        <br /> <br />
+        <footer role="contentinfo">
+            <nav id="navfooter" role="navigation" aria-label="תפריט ניווט תחתון">
+                <span id="miniLogo"></span>
+                <ul>
+                    <li class="leftie"><a href="about.html" target="_self">אודות</a></li>
+                    <li class="leftie"><a href="siteMap.html" target="_self">מפת אתר</a></li>
+                    <li><a href="contactUs.html" target="_self">צור קשר</a></li>
+                </ul>
+                <p>© כל הזכויות שמורות לצוות מסע'לה תה</p>
+            </nav>
+        </footer>
+    </div>
+</body>
+</html>

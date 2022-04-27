@@ -1,0 +1,2637 @@
+﻿/*/*/ /*/*/ /*/*/ /*הטמעת הפונטים הקיימים באתר*/ /*/*/ /*/*/ /*/*/
+@font-face {
+    font-family: 'GveretLevinAlefAlefAlef-Regular';
+    src: url('../fonts/GveretLevinAlefAlefAlef-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'gisha';
+    src: url('../fonts/gisha.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'gishabd';
+    src: url('../fonts/gishabd.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'BRADHITC';
+    src: url('../fonts/BRADHITC.TTF') format('truetype');
+}
+
+/*/*//*/*//*/*//*הגדרות כלליות הרלוונטיות לכל העמודים*//*/*//*/*//*/*/
+
+/*הגדרות למיקומים וגודל דף*/
+body {
+    direction: rtl;
+    width: 1280px;
+    margin: 0 auto;
+    background-image: url(../images/design/background-wood_optimized.png);
+    background-size: 1280px;
+    overflow-x: hidden;
+
+}
+
+#container {
+    width: 1280px;
+    position: absolute;
+    box-shadow: 0 5px 5px 5px #C9C9C9;
+    overflow: hidden;
+}
+
+#z_level_index {
+    z-index: -1;
+}
+
+/*הגדרות ל-header*/
+#headdesign {
+    top: 0;
+    width: 100%;
+    background-color: white;
+    height: 120px;
+    background-image: url(../images/design/header-masala.png);
+    background-size: 100%;
+}
+
+#logo {
+    content: url(../images/design/masala-logo.png);
+    width: 270px;
+    position: relative;
+    right: 500px;
+}
+
+#logohiper {
+    z-index: 1;
+    position: absolute;
+}
+
+#headdesign p {
+    font-family: 'Gveret Levin AlefAlefAlef';
+    position: absolute;
+    right: 553px;
+    top: 75px;
+}
+
+/*הגדרות של כותרות לכל העמודים*/
+h2 {
+    font-size: 16pt;
+    font-family: gisha;
+}
+
+h1 {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 38px;
+    font-family: 'Gveret Levin AlefAlefAlef';
+    background: url(../images/design/backgroundH1.png) no-repeat;
+    background-size: 25%;
+    background-position: center;
+    margin-bottom: 100px;
+    height: 70px;
+    z-index: 1;
+    opacity: 0.9;
+}
+
+.pictureH1 {
+    width: 8%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    top: 8px;
+}
+
+/*/*/ /*/*/ /*/*/ /*הגדרות תפריטים*/ /*/*/ /*/*/ /*/*/
+
+/*main navigation*/
+
+#navigation {
+    width: 1280px;
+    list-style: none;
+    position: fixed;
+    top: 120px;
+    overflow: visible;
+    background-color: white;
+    z-index: 5;
+}
+
+#navigation ul > li {
+    display: inline-block;
+    width: 15%;
+    height: 20px;
+    background-color: white;
+    padding: 5px 16px;
+    text-align: center;
+    float: right;
+}
+
+#navigation #menu li:hover #country li {
+    width: 105px;
+}
+
+#navigation #menu li:hover #Families li {
+    width: 120px;
+}
+
+#navigation ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-family: Gisha;
+}
+
+.left {
+    border-left: solid #FFD6A5 2px;
+}
+
+#navigation #menu li ul {
+    display: none;
+}
+
+#navigation #menu li:hover #country {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    left: 59px;
+    top: 7px;
+}
+
+#navigation #menu li:hover #Families {
+    display: inline-block;
+    width: 105px;
+    height: 20px;
+    top: 7px;
+    left: 40px;
+}
+
+#navigation #menu li:hover ul {
+    position: relative;
+    left: 50px;
+}
+
+#navigation > #menu > li:hover > a {
+    font-weight: bold;
+    border-bottom: solid #FFD6A5 2px;
+    padding-bottom: 2px;
+    width: 70px;
+}
+
+#menu li #Families li:hover a {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+#menu li #country li:hover a {
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 8px;
+    cursor: not-allowed;
+}
+
+#menu li #country li:hover {
+    cursor: not-allowed;
+}
+
+.allowed {
+    cursor: pointer;
+}
+
+.notallowed {
+    cursor: not-allowed;
+}
+
+#menu li #country .allowed:hover {
+    cursor: pointer;
+}
+
+span.loc:before {
+    display: none;
+}
+
+#menu li ul li:hover .loc {
+    content: url('../images/design/location-mark.png');
+    display: inline-block;
+    position: static;
+    float: right;
+    margin-right: 1px;
+    height: 20px;
+
+}
+
+/*footer navigation*/
+
+#navfooter {
+    position: absolute;
+    background-color: white;
+    overflow: hidden;
+    bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index: 3;
+}
+
+#navfooter ul {
+    padding-right: 50px;
+}
+
+#navfooter p {
+    padding-right: 1000px;
+}
+
+#navfooter > ul > li {
+    float: right;
+    display: inline-block;
+    color: black;
+    text-align: center;
+    width: 100px;
+}
+
+#navfooter ul li a, #navfooter p {
+    font-size: 12pt;
+    font-family: Gisha;
+    text-decoration: none;
+    color: black;
+}
+
+#navfooter > ul > li:hover > a {
+    font-weight: bold;
+}
+
+.leftie {
+    border-left: solid #FFD6A5 2px;
+}
+
+#miniLogo {
+    content: url('../images/design/cupLogo.png');
+    position: absolute;
+    width: 3%;
+    margin-top: -10px;
+    margin-right: 15px;
+}
+
+/*/*/ /*/*/ /*/*/ /*עמוד נפלאות התה*/ /*/*/ /*/*/ /*/*/
+
+#familieinfo h2 {
+    font-family: GveretLevinAlefAlefAlef-Regular;
+    font-size: 28pt;
+    margin-right: 70px;
+    margin-top: 5px;
+}
+
+/*תפריט משפחות מרחף*/
+
+#navfamilysUP {
+    width: 580px;
+    justify-content: center;
+    position: fixed;
+    display: none;
+    top: 140px;
+    margin-right: 330px;
+    overflow: visible;
+    background-image: url(../images/design/background-wood_optimized.png);
+    transition: top 0.3s;
+    z-index: 4;
+    box-shadow: 2px 1px 5px 2px #e9e9e9;
+}
+
+
+#navfamilysUP li .sizeimgfamilyUP {
+    width: 50px;
+    padding-right: 3px;
+}
+
+#navfamilysUP li {
+    display: inline-block;
+    margin-left: 6px;
+    width: 56px;
+    height: 70px;
+    position: relative;
+}
+
+#navfamilysUP li p {
+    font-family: Gisha;
+    font-size: 12pt;
+    color: black;
+    text-align: center;
+}
+
+#navfamilysUP li a {
+    text-decoration: none;
+}
+
+/*על הדף-תפריט משפחות*/
+
+.sizeimgfamily {
+    width: 130px;
+    height: 130px;
+}
+
+#navfamilys {
+    margin-top: 0px;
+}
+
+#navfamilys li:hover .sizeimgfamily {
+    display: none;
+}
+
+#navfamilys li {
+    display: inline-block;
+    width: 150px;
+    height: 20px;
+    position: relative;
+    top: 0px;
+    left: 20px;
+}
+
+#navfamilys p {
+    display: none;
+}
+
+#navfamilys li:hover a p {
+    font-family: GveretLevinAlefAlefAlef-Regular;
+    font-size: 16pt;
+    display: inline;
+    position: absolute;
+    right: 30px;
+    top: 40px;
+    color: black;
+    text-align: center;
+    width: 70px;
+    list-style: none;
+}
+
+#navfamilys li p:first-child {
+    font-family: Gisha;
+    font-size: 15pt;
+    display: inline-block;
+    position: absolute;
+    width: 50px;
+    top: -30px;
+    right: 40px;
+    color: black;
+    list-style: none;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px #9C9C9C;
+}
+
+#greencheck {
+    display: none;
+}
+
+#navfamilys li:hover .emptyglass {
+    content: url(../images/familys/cuptext.png);
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+}
+
+/*הסבר כללי על הנפלאות*/
+
+.teabackground {
+    background-color: #FFF8F3;
+    margin: 7%;
+    width: 700px;
+    height: 350px;
+    opacity: 0.85;
+    margin-bottom: 200px;
+    margin-left: 200px;
+    margin-right: 60px;
+}
+
+.teabackground p {
+    font-family: Gisha;
+    line-height: 160%;
+    text-align: justify;
+    padding: 20px 30px;
+    font-size: 20px;
+}
+
+/*תמונות הסבר*/
+
+#camilla {
+    width: 270px;
+    margin-right: 870px;
+    margin-top: -500px;
+}
+
+#camillatexe {
+    -webkit-transform: rotate(13deg);
+    font-family: GveretLevinAlefAlefAlef-Regular;
+    font-size: 16pt;
+    width: 170px;
+    margin-right: 930px;
+    margin-top: -90px;
+}
+
+#teafield {
+    width: 270px;
+    margin-top: -400px;
+    margin-right: 720px;
+}
+
+#teafieldtexe {
+    -webkit-transform: rotate(-8deg);
+    font-family: GveretLevinAlefAlefAlef-Regular;
+    font-size: 16pt;
+    margin-right: 777px;
+    width: 100px;
+    margin-top: -105px;
+}
+
+/*תיבות טקסט צדדיות*/
+
+.greentext {
+    background-color: #E2F5CF;
+    width: 250px;
+    height: 200px;
+    -webkit-transform: rotate(8deg);
+    position: relative;
+    margin-right: -250px;
+    top: -200px;
+    box-shadow: 3px 1px 5px 2px #B3B3B3;
+}
+
+.greentext p {
+    font-family: GveretLevinAlefAlefAlef-Regular;
+    font-size: 14pt;
+    line-height: 160%;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.crametext {
+    background-color: #FFF1E6;
+    width: 250px;
+    height: 200px;
+    -webkit-transform: rotate(-8deg);
+    position: relative;
+    margin-right: 850px;
+    top: -200px;
+    box-shadow: 3px 1px 5px 2px #B3B3B3;
+}
+
+.crametext p {
+    font-family: GveretLevinAlefAlefAlef-Regular;
+    font-size: 14pt;
+    line-height: 160%;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+/*תמונות על תיבות טקסט צדדיות*/
+#coffe {
+    content: url(../images/familys/coffe.png);
+    position: relative;
+    width: 60px;
+    right: 170px;
+    top: -10px;
+    -webkit-transform: rotate(-3deg);
+}
+
+#plant {
+    content: url(../images/familys/plant.png);
+    position: relative;
+    width: 110px;
+    right: -15px;
+    top: -240px;
+    -webkit-transform: rotate(-3deg);
+}
+
+#wine {
+    content: url(../images/familys/wine.png);
+    position: relative;
+    width: 100px;
+    right: -10px;
+    top: -30px;
+    -webkit-transform: rotate(-3deg);
+}
+
+#crown {
+    content: url(../images/familys/crown.png);
+    position: relative;
+    width: 80px;
+    right: 80px;
+    top: -200px;
+    -webkit-transform: rotate(-3deg);
+}
+
+/*תמונות תה*/
+.teaimg {
+    float: right;
+    width: 170px;
+    height: 170px;
+    padding: 30px;
+    margin-top: -20px;
+    margin-right: 5px;
+}
+
+/*רקע תעודות הזהות*/
+
+.tea {
+    background-color: #FFF8F3;
+    margin: 50px;
+    width: 870px;
+    height: 340px;
+    padding-top: 10px;
+    margin-right: 50px;
+    margin-top: 150px;
+    opacity: 0.85;
+    background-image: url('../images/familys/line.png');
+    background-repeat: no-repeat;
+    background-position: 600px 20px;
+    background-size: 18px;
+}
+
+.green {
+    background-color: #E2F5CF;
+    font-family: 'Gveret Levin AlefAlefAlef';
+    width: 250px;
+    height: 200px;
+    font-size: 20px;
+    line-height: 160%;
+    -webkit-transform: rotate(8deg);
+    margin-right: 210px;
+    position: relative;
+    text-align: center;
+}
+
+.plocation p {
+    margin-top: 50px;
+    margin-right: 70px;
+    width: 147px;
+    font-family: Gisha;
+    line-height: 160%;
+    font-size: 14pt;
+}
+
+.Pfamily p {
+    font-family: Gisha;
+    line-height: 160%;
+    text-align: justify;
+    font-size: 14pt;
+}
+
+.Pfamily {
+    width: 500px;
+    margin-top: -290px;
+    margin-right: 330px;
+}
+
+strong {
+    font-family: Gisha;
+}
+
+#infusions {
+    width: 500px;
+    margin-top: 300px;
+    margin-right: 0px;
+}
+
+/*אייקונים*/
+.location {
+    content: url(../images/familys/location.png);
+    display: inline-block;
+    width: 40px;
+    position: absolute;
+    margin-right: -215px;
+    margin-top: 215px;
+}
+
+.aroma {
+    content: url(../images/familys/aroma.png);
+    display: inline-block;
+    width: 55px;
+    position: absolute;
+    margin-right: 30px;
+    margin-top: -30px;
+}
+
+#aromateaoolung {
+    margin-top: -20px;
+}
+
+.procses {
+    content: url(../images/familys/process.png);
+    display: inline-block;
+    width: 45px;
+    position: absolute;
+    margin-right: 40px;
+    margin-top: 70px;
+}
+
+#procses50 {
+    margin-top: 50px;
+}
+
+#procsesoolung {
+    margin-top: 80px;
+}
+
+#procsesred {
+    margin-top: 40px;
+}
+
+.benefits {
+    content: url(../images/familys/healthbenefits.png);
+    display: inline-block;
+    width: 55px;
+    position: absolute;
+    margin-right: 35px;
+    margin-top: 160px;
+}
+
+#benefits130 {
+    margin-top: 130px;
+}
+
+#benefits190 {
+    margin-top: 190px;
+}
+
+#benefitsred {
+    margin-top: 100px;
+}
+
+
+#familieinfo > div:nth-child(even) {
+    position: relative;
+    right: -150px;
+    top: 0px;
+    margin-right: 250px;
+}
+
+#familieinfo div:nth-child(odd) {
+    position: relative;
+    right: 100px;
+    margin-right: 220px;
+    top: 0px;
+}
+
+#push {
+    bottom: 150px;
+    position: relative;
+}
+
+#teaArrow {
+    margin-top: -18px;
+    margin-right: 200px;
+    transform: scaleY(-1) rotate(60deg);
+}
+
+/*הטמעת הייצוג האינטראקטיבי*/
+
+#garden {
+    position: relative;
+    height: 534px;
+    width: 944px;
+    border: 12px solid #f7f7f7;
+    box-shadow: 0 4px 4px 3px #C9C9C9;
+    margin-right: 138px;
+    margin-bottom: 50px;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+}
+
+/*/*/ /*/*/ /*/*/ /*עמוד אודות*/ /*/*/ /*/*/ /*/*/
+
+#whous {
+    background-color: #FFF8F3;
+    width: 860px;
+    height: 220px;
+    padding: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#name {
+    margin-top: 20px;
+    background-color: #FFF8F3;
+    width: 640px;
+    height: 540px;
+    padding: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#cours {
+    list-style: none;
+    position: relative;
+    top: -40px;
+    padding-right: 0px;
+}
+
+#cours li {
+    font-family: Gisha;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.icon_logo {
+    background: url(../images/odot/location-mark-odot.png) no-repeat right top;
+    background-size: 30px;
+    height: 30px;
+    padding-right: 40px;
+    padding-top: 3px;
+}
+
+#pages {
+    margin-top: 20px;
+    background-color: #FFF8F3;
+    width: 900px;
+    height: 150px;
+    padding: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#pages pre {
+    width: 1200px;
+    height: 160px;
+    font-size: 20px;
+}
+
+pre {
+    width: 1000px;
+    height: 160px;
+    margin-top: 20px;
+    font-family: Gisha;
+    font-size: 22px;
+}
+
+/*/*/ /*/*/ /*/*/ /*עמוד הבית*/ /*/*/ /*/*/ /*/*/
+
+#Homelines {
+    content: url('../images/homePage/linesLast.png');
+    position: absolute;
+    width: 1280px;
+    top: -160px;
+}
+
+#accessibility_bt {
+    position: fixed;
+    z-index: 1;
+    display: none;
+    margin-right: 0px;
+    top: 300px;
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    display: block;
+}
+
+#topHomepage {
+    background-image: url('../images/homePage/green map.png');
+    -webkit-box-shadow: 1px 3px 10px 3px #C7C7C7;
+    box-shadow: 1px 3px 10px 3px #C7C7C7;
+    height: 400px;
+    width: 1280px;
+    position: relative;
+}
+
+#paper {
+    top: 10px;
+    right: 220px;
+    position: absolute;
+}
+
+/*כפתור מעבר בין רשימה למפה*/
+
+.switch {
+    right: 340px;
+    top: 20px;
+    position: absolute;
+    height: 26px;
+    width: 120px;
+    margin: 20px auto;
+    background: #52796F;
+    border-radius: 8px;
+    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.switch-label {
+    position: relative;
+    z-index: 3;
+    float: left;
+    width: 58px;
+    line-height: 26px;
+    font-size: 14px;
+    color: #eceaea;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.45);
+    cursor: pointer;
+    font-family: Gisha;
+}
+
+.switch-label:active {
+    font-weight: bold;
+}
+
+.switch-label-off {
+    padding-left: 2px;
+}
+
+.switch-label-on {
+    padding-right: 2px;
+}
+
+
+.switch-input {
+    display: none;
+}
+
+.switch-input:checked + .switch-label {
+    font-weight: bold;
+    color: #5D3252;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.25);
+    -webkit-transition: 0.15s ease-out;
+    -moz-transition: 0.15s ease-out;
+    -ms-transition: 0.15s ease-out;
+    -o-transition: 0.15s ease-out;
+    transition: 0.15s ease-out;
+    -webkit-transition-property: color, text-shadow;
+    -moz-transition-property: color, text-shadow;
+    -ms-transition-property: color, text-shadow;
+    -o-transition-property: color, text-shadow;
+    transition-property: color, text-shadow;
+}
+
+.switch-input:checked + .switch-label-on ~ .switch-selection {
+    left: 60px;
+}
+
+.switch-selection {
+    position: absolute;
+    z-index: 2;
+    top: 2px;
+    left: 2px;
+    display: block;
+    width: 58px;
+    height: 22px;
+    border-radius: 8px;
+    background-color: #FFF8F3;
+    -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 0 2px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 0 2px rgba(0, 0, 0, 0.2);
+    -webkit-transition: left 0.15s ease-out;
+    -moz-transition: left 0.15s ease-out;
+    -ms-transition: left 0.15s ease-out;
+    -o-transition: left 0.15s ease-out;
+    transition: left 0.15s ease-out;
+}
+
+#actioncall {
+    font-family: GveretLevinAlefAlefAlef-Regular;
+    font-size: 14pt;
+    right: 360px;
+    top: 170px;
+    position: absolute;
+    width: 160px;
+}
+
+#picarrow {
+    content: url(../images/homePage/arrowa.png);
+    right: 420px;
+    position: absolute;
+    width: 140px;
+    height: 110px;
+    top: 180px;
+    transform: rotate(-15deg);
+}
+
+/*סידור המדינות על המפה*/
+#mapDIV {
+    background: url(../images/homePage/maptea.png) no-repeat right top;
+    background-size: 90%;
+    height: 325px;
+    width: 600px;
+    position: relative;
+    top: 20px;
+    right: 560px;
+}
+
+#listDIV {
+    height: 300px;
+    width: 700px;
+    position: relative;
+    top: 30px;
+    right: 500px;
+    padding-top: 20px;
+}
+
+#mapULcountry {
+    list-style: none;
+    position: relative;
+    height: 100px;
+    right: -60px;
+}
+
+#mapULcountry li a {
+    display: none;
+    font-family: 'Gveret Levin AlefAlefAlef';
+    text-decoration: none;
+    color: black;
+}
+
+#mapULcountry li:hover a {
+    display: block;
+    cursor: not-allowed;
+}
+
+#mapULcountry li {
+    width: 80px;
+    height: 70px;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+    cursor: not-allowed;
+}
+
+#listULcountry {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+}
+
+#listULcountry li {
+    width: 180px;
+    height: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    cursor: not-allowed;
+}
+
+#listULcountry li a {
+    text-decoration: none;
+    font-family: 'Gveret Levin AlefAlefAlef';
+    color: black;
+    cursor: not-allowed;
+}
+
+#listULcountry li:hover a {
+    font-size: 20px;
+    margin-left: 13px;
+}
+
+/*מעבר עכבר של אנגליה*/
+
+#mapULcountry li .viseng {
+    display: inline-block;
+    cursor: pointer;
+}
+
+#mapULcountry #eng-map {
+    content: url(../images/locatiom-map/england.png);
+    display: inline-block;
+    position: relative;
+    top: 30px;
+    width: 40px;
+    cursor: pointer;
+}
+
+#mapULcountry li:hover a #eng-map {
+    display: inline-block;
+    width: 50px;
+    top: 10px;
+    cursor: pointer;
+}
+
+#myp {
+    display: none;
+}
+
+#mapULcountry li:hover #myp {
+    display: inline-block;
+    width: 50px;
+    position: relative;
+    top: 10px;
+    cursor: pointer;
+    font-family: 'Gveret Levin AlefAlefAlef';
+    text-decoration: none;
+    color: black;
+}
+
+#eng-li {
+    right: 270px;
+    bottom: 350px;
+    display: inline-block;
+}
+
+/*סיום*/
+
+#mapULcountry #aus-map {
+    content: url(../images/locatiom-map/australia.png);
+    display: inline-block;
+    position: relative;
+    top: 30px;
+    width: 40px;
+}
+
+#mapULcountry li:hover #aus-map {
+    width: 50px;
+    top: 0px;
+}
+
+#aus-li {
+    right: 50px;
+    top: 190px;
+}
+
+#mapULcountry #ind-map {
+    content: url(../images/locatiom-map/india.png);
+    display: inline-block;
+    position: relative;
+    top: 30px;
+    width: 40px;
+}
+
+#mapULcountry li:hover #ind-map {
+    width: 50px;
+    top: 0px;
+}
+
+#ind-li {
+    right: 130px;
+}
+
+#mapULcountry #jap-map {
+    content: url(../images/locatiom-map/japan.png);
+    display: inline-block;
+    position: relative;
+    top: 30px;
+    width: 40px;
+}
+
+#mapULcountry li:hover #jap-map {
+    width: 50px;
+    top: 0px;
+}
+
+#jap-li {
+    right: 55px;
+    top: -85px;
+}
+
+#mapULcountry #por-map {
+    content: url(../images/locatiom-map/portugal.png);
+    display: inline-block;
+    position: relative;
+    top: 30px;
+    width: 40px;
+}
+
+#mapULcountry li:hover #por-map {
+    width: 50px;
+    top: 0px;
+}
+
+#por-li {
+    right: 277px;
+    bottom: 230px;
+}
+
+#mapULcountry #tur-map {
+    content: url(../images/locatiom-map/turkish.png);
+    display: inline-block;
+    position: relative;
+    top: 30px;
+    width: 40px;
+}
+
+#mapULcountry li:hover #tur-map {
+    width: 50px;
+    top: 0px;
+}
+
+#tur-li {
+    right: 215px;
+    bottom: 410px;
+}
+
+#mapULcountry #egy-map {
+    content: url(../images/locatiom-map/egypt.png);
+    display: inline-block;
+    position: relative;
+    top: 30px;
+    width: 40px;
+}
+
+#mapULcountry li:hover #egy-map {
+    width: 50px;
+    top: 0px;
+}
+
+#egy-li {
+    right: 215px;
+    bottom: 470px;
+}
+
+#mapULcountry #per-map {
+    content: url(../images/locatiom-map/peru.png);
+    display: inline-block;
+    position: relative;
+    top: 30px;
+    width: 40px;
+}
+
+#mapULcountry li:hover #per-map {
+    width: 50px;
+    top: 0px;
+}
+
+#per-li {
+    right: 415px;
+    bottom: 490px;
+}
+
+#mapULcountry #arg-map {
+    content: url(../images/locatiom-map/argentina.png);
+    display: inline-block;
+    position: relative;
+    top: 30px;
+    width: 40px;
+}
+
+#mapULcountry li:hover #arg-map {
+    width: 50px;
+    top: 0px;
+}
+
+#arg-li {
+    right: 380px;
+    bottom: 515px;
+}
+
+#mapULcountry #tib-map {
+    content: url(../images/locatiom-map/tibet.png);
+    display: inline-block;
+    position: relative;
+    top: 30px;
+    width: 40px;
+}
+
+#mapULcountry li:hover #tib-map {
+    width: 50px;
+    top: 0px;
+}
+
+#tib-li {
+    right: 115px;
+    bottom: 745px;
+}
+
+#mapULcountry #mor-map {
+    content: url(../images/locatiom-map/Morocco.png);
+    display: inline-block;
+    position: relative;
+    top: 30px;
+    width: 40px;
+}
+
+#mapULcountry li:hover #mor-map {
+    width: 50px;
+    top: 0px;
+}
+
+#mor-li {
+    right: 280px;
+    bottom: 830px;
+}
+
+#mapULcountry #ira-map {
+    content: url(../images/locatiom-map/iran.png);
+    display: inline-block;
+    position: relative;
+    top: 30px;
+    width: 40px;
+}
+
+#mapULcountry li:hover #ira-map {
+    width: 50px;
+    top: 0px;
+}
+
+#ira-li {
+    right: 170px;
+    bottom: 930px;
+}
+
+#mapULcountry #soth-map {
+    content: url('../images/locatiom-map/south africa.png');
+    display: inline-block;
+    position: relative;
+    top: 30px;
+    width: 40px;
+}
+
+#mapULcountry li:hover #soth-map {
+    width: 50px;
+    right: 0px;
+    top: 0px;
+}
+
+#soth-li {
+    right: 240px;
+    bottom: 880px;
+}
+
+#mapULcountry #tai-map {
+    content: url(../images/locatiom-map/taiwan.png);
+    display: inline-block;
+    position: relative;
+    top: 30px;
+    width: 40px;
+}
+
+#mapULcountry li:hover #tai-map {
+    width: 50px;
+    top: 0px;
+}
+
+#tai-li {
+    right: 70px;
+    bottom: 1080px;
+}
+
+#mapULcountry #chi-map {
+    content: url(../images/locatiom-map/china.png);
+    display: inline-block;
+    position: relative;
+    top: 30px;
+    width: 40px;
+}
+
+#mapULcountry li:hover #chi-map {
+    width: 50px;
+    top: 0px;
+}
+
+#chi-li {
+    right: 85px;
+    bottom: 1190px;
+}
+
+#mapULcountry #ken-map {
+    content: url(../images/locatiom-map/kenia.png);
+    display: inline-block;
+    position: relative;
+    top: 30px;
+    width: 40px;
+}
+
+#mapULcountry li:hover #ken-map {
+    width: 50px;
+    top: 0px;
+}
+
+#ken-li {
+    right: 205px;
+    bottom: 1220px;
+}
+
+/*סידור המדינות כרשימה*/
+
+#listULcountry #eng {
+    content: url(../images/locatiom-map/england.png);
+    display: inline-block;
+    position: relative;
+    right: 20px;
+    float: right;
+    width: 40px;
+    top: -8px;
+}
+
+#listULcountry li:hover #eng {
+    width: 50px;
+    right: 10px;
+    cursor: pointer;
+}
+
+#listULcountry #aus {
+    content: url(../images/locatiom-map/australia.png);
+    display: inline-block;
+    position: relative;
+    right: 20px;
+    float: right;
+    width: 40px;
+    top: -8px;
+}
+
+#listULcountry li:hover #aus {
+    width: 50px;
+}
+
+#listULcountry #ind {
+    content: url(../images/locatiom-map/india.png);
+    display: inline-block;
+    position: relative;
+    right: 20px;
+    float: right;
+    width: 40px;
+    top: -8px;
+}
+
+#listULcountry li:hover #ind {
+    width: 50px;
+}
+
+#listULcountry #jap {
+    content: url(../images/locatiom-map/japan.png);
+    display: inline-block;
+    position: relative;
+    right: 20px;
+    float: right;
+    width: 40px;
+    top: -8px;
+}
+
+#listULcountry li:hover #jap {
+    width: 50px;
+}
+
+#listULcountry #por {
+    content: url(../images/locatiom-map/portugal.png);
+    display: inline-block;
+    right: 20px;
+    position: relative;
+    float: right;
+    width: 40px;
+    top: -8px;
+}
+
+#listULcountry li:hover #por {
+    width: 50px;
+}
+
+#listULcountry #tur {
+    content: url(../images/locatiom-map/turkish.png);
+    display: inline-block;
+    position: relative;
+    right: 20px;
+    float: right;
+    width: 40px;
+    top: -8px;
+}
+
+#listULcountry li:hover #tur {
+    width: 50px;
+}
+
+#listULcountry #egy {
+    content: url(../images/locatiom-map/egypt.png);
+    display: inline-block;
+    position: relative;
+    right: 20px;
+    float: right;
+    width: 40px;
+    top: -8px;
+}
+
+#listULcountry li:hover #egy {
+    width: 50px;
+}
+
+#listULcountry #per {
+    content: url(../images/locatiom-map/peru.png);
+    display: inline-block;
+    position: relative;
+    right: 20px;
+    float: right;
+    width: 40px;
+    top: -8px;
+}
+
+#listULcountry li:hover #per {
+    width: 50px;
+}
+
+#listULcountry #arg {
+    content: url(../images/locatiom-map/argentina.png);
+    display: inline-block;
+    position: relative;
+    right: 20px;
+    float: right;
+    width: 40px;
+    top: -8px;
+}
+
+#listULcountry li:hover #arg {
+    width: 50px;
+}
+
+#listULcountry #tib {
+    content: url(../images/locatiom-map/tibet.png);
+    display: inline-block;
+    position: relative;
+    right: 20px;
+    float: right;
+    width: 40px;
+    top: -8px;
+}
+
+#listULcountry li:hover #tib {
+    width: 50px;
+}
+
+#listULcountry #mor {
+    content: url(../images/locatiom-map/Morocco.png);
+    display: inline-block;
+    position: relative;
+    right: 20px;
+    float: right;
+    width: 40px;
+    top: -8px;
+}
+
+#listULcountry li:hover #mor {
+    width: 50px;
+}
+
+#listULcountry #ira {
+    content: url(../images/locatiom-map/iran.png);
+    display: inline-block;
+    position: relative;
+    right: 20px;
+    float: right;
+    width: 40px;
+    top: -8px;
+}
+
+#listULcountry li:hover #ira {
+    width: 50px;
+}
+
+#listULcountry #soth {
+    content: url('../images/locatiom-map/south africa.png');
+    display: inline-block;
+    position: relative;
+    right: 20px;
+    float: right;
+    width: 40px;
+    top: -8px;
+}
+
+#listULcountry li:hover #soth {
+    width: 50px;
+    right: 0px;
+}
+
+#listULcountry #tai {
+    content: url(../images/locatiom-map/taiwan.png);
+    display: inline-block;
+    position: relative;
+    right: 20px;
+    float: right;
+    width: 40px;
+    top: -8px;
+}
+
+#listULcountry li:hover #tai {
+    width: 50px;
+}
+
+#listULcountry #chi {
+    content: url(../images/locatiom-map/china.png);
+    display: inline-block;
+    position: relative;
+    right: 20px;
+    float: right;
+    width: 40px;
+    top: -8px;
+}
+
+#listULcountry li:hover #chi {
+    width: 50px;
+}
+
+#listULcountry #ken {
+    content: url(../images/locatiom-map/kenia.png);
+    display: inline-block;
+    position: relative;
+    right: 20px;
+    float: right;
+    width: 40px;
+    top: -8px;
+}
+
+#listULcountry li:hover #ken {
+    width: 50px;
+}
+
+/*עיצוב עמוד הבית*/
+
+#more {
+    padding: 50px;
+    text-align: center;
+    background: url(../images/design/backgroundH1.png) no-repeat;
+    background-size: 280px;
+    background-position: center;
+    margin: -40px auto 10px auto;
+    font-family: GveretLevinAlefAlefAlef-Regular;
+}
+
+#basket {
+    content: url('../images/homePage/basket.png');
+    position: relative;
+    right: -7px;
+    bottom: 162px;
+}
+
+#sugar {
+    content: url('../images/homePage/sugar.png');
+    position: absolute;
+    left: 50px;
+    margin-top: 120px;
+}
+
+/*תמונות פולרואיד הצפת תוכן */
+
+#contentFloat {
+    height: 430px;
+}
+
+.floatPolaroid {
+    position: relative;
+    width: 28%;
+    float: right;
+    margin-right: 45px;
+}
+
+.polo {
+    opacity: 1;
+    width: 100%;
+    height: auto;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+}
+
+.marker {
+    background-image: url('../images/homePage/marker.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 240px;
+    width: 305px;
+    transition: 0.4s ease;
+    opacity: 0;
+    position: absolute;
+    top: 20%;
+    left: 8%;
+    -ms-transform: translate(-50%, -50%);
+    margin-top: -20px;
+    margin-right: 20px;
+}
+
+.floatPolaroid:hover .polo {
+    opacity: 1;
+    transform: rotate(8deg);
+}
+
+.floatPolaroid:hover .marker {
+    opacity: 1;
+    transform: rotate(8deg);
+}
+
+.poloTxt {
+    font-size: 28px;
+    font-family: Gisha;
+    padding: 16px 32px;
+    line-height: 160%;
+    margin-top: 32px;
+    text-align: center;
+    color: black;
+}
+
+.picTitle {
+    font-family: 'Gveret Levin AlefAlefAlef';
+    font-size: 18pt;
+    width: 100%;
+    margin-top: -90px;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+    text-align: center;
+    color: black;
+}
+
+.floatPolaroid:hover .picTitle {
+    opacity: 1;
+    transform: rotate(8deg);
+    margin-top: -90px;
+    margin-right: 20px;
+}
+
+/*/*/ /*/*/ /*/*/ /*עמוד אנגליה*/ /*/*/ /*/*/ /*/*/
+
+#londonLines {
+    content: url('../images/london/lines.png');
+    position: absolute;
+    width: 1280px;
+    top: 0px;
+}
+
+
+#openPage {
+    position: relative;
+}
+
+
+#musiclondon {
+    content: url(../images/london/playlondon.png);
+    margin-top: 20px;
+    margin-right: -400px;
+    width: 80px;
+    display: none;
+}
+
+#londonplay {
+    width: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: 50px;
+    right: 90px;
+}
+
+#londonphoto {
+    background-image: url('../images/london/londonphoto.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-right: 19%;
+    height: 355px;
+    width: 800px;
+    margin-top: -80px;
+}
+
+#titlengland {
+    margin-top: -290px;
+}
+
+
+#locationtop {
+    content: url(../images/london/iconlondon.png);
+    position: absolute;
+    width: 91px;
+    right: 47%;
+    top: -5px;
+}
+
+#flag {
+    content: url(../images/london/flag.png);
+    position: relative;
+    width: 150px;
+    top: -7px;
+    -webkit-transform: rotate(-8deg);
+}
+
+#facts {
+    position: relative;
+    top: 150px;
+    right: 50px;
+    height: 500px;
+    width: 1022px;
+}
+
+#facts p {
+    margin-top: 20px;
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: 'Gveret Levin AlefAlefAlef';
+    position: relative;
+}
+
+#greenote {
+    background-color: #E2F5CF;
+    width: 286px;
+    height: 247px;
+    -webkit-transform: rotate(8deg);
+    position: relative;
+    padding-bottom: 20px;
+    text-align: center;
+    text-align: center;
+    line-height: 383%;
+    top: 50px;
+    right: 100px;
+}
+
+#pinknote {
+    background-color: #F5CFF2;
+    width: 255px;
+    height: 247px;
+    -webkit-transform: rotate(-8deg);
+    position: relative;
+    top: -140px;
+    right: 700px;
+}
+
+#pinknote p {
+    text-align: center;
+    padding: 15px;
+    right: -3px;
+    display: block;
+    line-height: 208%;
+    top: 0px;
+    position: inherit;
+    height: 22px;
+}
+
+#four {
+    font-size: 72px;
+    position: static;
+}
+
+#greentape {
+    width: 100px;
+    height: 28px;
+    background-color: #fdfffcb8;
+    position: absolute;
+    -webkit-transform: rotate(46deg);
+    right: -42px;
+    top: 4px;
+}
+
+#tapePink {
+    width: 100px;
+    height: 28px;
+    background-color: #fdfffcb8;
+    position: absolute;
+    -webkit-transform: rotate(-51deg);
+    right: 195px;
+    top: 8px;
+}
+
+#londontext {
+    position: relative;
+    top: 120px;
+}
+
+#londontext p {
+    font-family: Gisha;
+    font-size: 14pt;
+    line-height: 160%;
+    position: relative;
+    margin-top: auto;
+    text-align: justify;
+}
+
+#history {
+    margin-top: auto;
+    opacity: 0.85;
+    background-color: #FFF8F3;
+    width: 550px;
+    height: 110px;
+    padding: 20px 20px;
+    margin-right: 200px;
+}
+
+#bus {
+    content: url(../images/london/bos.png);
+    position: absolute;
+    width: 250px;
+    top: -105px;
+    right: 700px;
+    -webkit-transform: rotate(-3deg);
+}
+
+#bigban {
+    content: url(../images/london/bigban.png);
+    position: relative;
+    width: 200px;
+    left: 200px;
+    top: -50px;
+    -webkit-transform: rotate(3deg);
+}
+
+#teatime {
+    margin-top: 118px;
+    background-color: #FFF8F3;
+    width: 700px;
+    height: 20px;
+    padding: 20px;
+    opacity: 0.85;
+    margin-right: 200px;
+    font-family: gisha;
+    text-align: right;
+    display: -webkit-inline-box;
+}
+
+#teatime h2 {
+    padding-top: 2px;
+}
+
+#afternoontea {
+    margin-top: 30px;
+    background-color: #FFF8F3;
+    width: 700px;
+    height: 156px;
+    padding: 20px;
+    opacity: 0.85;
+    margin-right: 200px;
+}
+
+#afternoonteaphoto {
+    position: relative;
+    width: 300px;
+    right: 700px;
+    top: -230px;
+    -webkit-transform: rotate(-3deg);
+}
+
+#afternoonteatext {
+    position: relative;
+    width: 300px;
+    right: 756px;
+    font-size: 24px;
+    top: -300px;
+    font-family: 'BRADHITC';
+    -webkit-transform: rotate(-12deg);
+}
+
+#hightea {
+    margin-top: 20px;
+    background-color: #FFF8F3;
+    width: 700px;
+    height: 100px;
+    padding: 20px;
+    opacity: 0.85;
+    margin-right: 200px;
+    margin-bottom: 279px;
+}
+
+#milk {
+    content: url(../images/london/milk.png);
+    position: absolute;
+    width: 600px;
+    right: 620px;
+    top: 500px;
+    -webkit-transform: rotate(-3deg);
+    z-index: 1;
+}
+
+#howdrink {
+    top: -100px;
+    background-color: #FFF8F3;
+    width: 700px;
+    height: 396px;
+    padding: 20px;
+    opacity: 0.85;
+    margin-right: 200px;
+    position: relative;
+}
+
+#ULhowdrink li {
+    height: 45px;
+    font-family: gisha;
+    font-size: 14pt;
+    text-align: justify;
+    line-height: 160%;
+}
+
+#ULhowdrink #big {
+    height: 71px;
+}
+
+#ULhowdrink {
+    margin-right: -20px;
+}
+
+#howdrink h2 {
+    font-family: Gisha;
+    margin: initial;
+    padding-bottom: 11px;
+}
+
+li.v {
+    background: url(../images/london/v.png) no-repeat right top;
+    background-size: 20px;
+    height: 40px;
+    padding-right: 40px;
+    padding-top: 3px;
+    list-style: none;
+    background-position-y: 5px;
+}
+
+li.x {
+    background: url(../images/london/x.png) no-repeat right top;
+    background-size: 20px;
+    height: 40px;
+    padding-right: 40px;
+    padding-top: 3px;
+    list-style: none;
+    background-position-y: 9px;
+}
+
+#pitcher {
+    margin-top: 12%;
+    background-color: #FFF8F3;
+    width: 260px;
+    height: 150px;
+    padding: 20px;
+    opacity: 0.85;
+    margin-right: 190px;
+}
+
+#arrow2 {
+    content: url(../images/london/arrow2.png);
+    position: relative;
+    width: 200px;
+    right: 410px;
+    top: -30px;
+}
+
+.englandh3 {
+    font-family: gishabd;
+    font-size: 16pt;
+}
+
+#whichdrink {
+    font-family: GveretLevinAlefAlefAlef-Regular;
+    padding-top: 10px;
+    font-size: 22pt;
+}
+
+#pitcherphoto1 {
+    position: relative;
+    width: 400px;
+    right: 600px;
+    bottom: 269px;
+}
+
+#pitcherphoto2 {
+    position: relative;
+    width: 400px;
+    right: 450px;
+    top: -380px;
+}
+
+#cup {
+    content: url(../images/london/cup.png);
+    position: relative;
+    width: 200px;
+    top: 60px;
+    right: -100px;
+}
+
+#teatype {
+    padding-top: 10px;
+    font-size: 30px;
+    font-family: 'Gveret Levin AlefAlefAlef';
+    background-color: #E2F5CF;
+    background-size: 100px;
+    background-position: center;
+    width: 300px;
+    height: 60px;
+    text-align: center;
+    margin-right: 470px;
+}
+
+#teatype2 {
+    display: inline;
+    margin-right: 50px;
+}
+
+.earlgreyandenglishbreakfast {
+    margin-top: 70px;
+    background-color: #FFF8F3;
+    width: 310px;
+    height: 160px;
+    padding: 20px;
+    opacity: 0.85;
+    margin-left: 100px;
+    display: inline-block;
+}
+
+#arrow3 {
+    content: url(../images/london/arrow4.png);
+    width: 70px;
+    position: relative;
+    right: 480px;
+    bottom: 115px;
+    transform: scaleX(-1);
+}
+
+#arrow4 {
+    content: url(../images/london/arrow4.png);
+    width: 70px;
+    position: relative;
+    right: 620px;
+    bottom: 115px;
+}
+
+#downlondon {
+    content: url(../images/london/downlondon.png);
+    width: 1280px;
+}
+
+#moreTypes {
+    margin-top: 30px;
+    background-color: #FFF8F3;
+    width: 760px;
+    height: 128px;
+    padding: 20px;
+    opacity: 0.85;
+    margin-right: 200px;
+    font-family: gisha;
+}
+
+#blackTea {
+    text-decoration: underline;
+    color: brown;
+}
+
+#window {
+    position: absolute;
+    height: 486px;
+    width: 803px;
+    top: 11%;
+    right: 67px;
+    content: url('../images/englandPics/window.png');
+}
+
+.breadcrumbUk {
+    margin-top: auto;
+}
+
+.breadcrumbUk li {
+    display: inline;
+    font-size: 14pt;
+    font-family: Gisha;
+}
+
+.breadcrumbUk li + li:before {
+    padding: 8px;
+    color: black;
+    content: url(../images/design/breadarrow.png);
+    position: relative;
+    top: 5px;
+}
+
+.breadcrumbUk li a {
+    color: #4A7A5D;
+}
+
+.breadcrumbUk li a:hover {
+    color: #f3a875;
+    text-decoration: underline;
+}
+
+#myBtn {
+    position: fixed;
+    bottom: 19px;
+    z-index: 1;
+    display: none;
+    margin-right: 1150px;
+    top: 450px;
+    text-decoration: none;
+}
+
+#myBtn img {
+    position: relative;
+    right: 12px;
+    bottom: 3px;
+}
+
+#myBtn p {
+    color: black;
+    font-family: 'Gveret Levin AlefAlefAlef';
+    text-align: center;
+    font-size: 16px;
+}
+
+#myBtn:hover {
+    background-size: 63px;
+}
+
+#start {
+    bottom: 110%;
+    right: 54%;
+}
+
+#scrollDown {
+    position: relative;
+    margin-right: 605px;
+    top: 330px;
+    z-index: 1;
+}
+
+/*חלון*/
+
+#imageContainer {
+    width: 983px;
+    position: relative;
+    padding-top: 90px;
+    right: 140px;
+}
+
+.slider-image {
+    margin: 0px;
+    padding: 0px;
+    display: none;
+    text-align: center;
+    margin-top: 4px;
+    margin-left: 39px;
+}
+
+.dot {
+    cursor: pointer;
+    background-image: url(../images/london/whitedot.png);
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 49px;
+    margin: -5px;
+    display: inline-block;
+    left: 20px;
+    position: relative;
+    bottom: 65px;
+    right: 267px;
+    background-size: 35px
+}
+
+.active, .dot:active {
+    background-image: url('../images/london/clicked.png');
+}
+
+.nvgt {
+    position: relative;
+    top: -294px;
+    opacity: 0.6;
+    margin-right: auto;
+    margin-left: auto;
+    border: none;
+    display: inline-block;
+}
+
+.nvgt:hover {
+    opacity: 0.9;
+}
+
+#prev {
+    right: -37px;
+    background: url('../images/london/slide right.png');
+    height: 80px;
+    width: 80px
+}
+
+#next {
+    right: 827px;
+    background: url('../images/london/slide left.png');
+    height: 80px;
+    width: 80px;
+}
+
+/*/*/ /*/*/ /*/*/ /*עמוד צור קשר*/ /*/*/ /*/*/ /*/*/
+
+form {
+    background-color: #FFF8F3;
+    text-align: justify;
+    width: 1050px;
+    height: 700px;
+    padding: 30px;
+    line-height: 160%;
+    opacity: 0.85;
+    margin-top: -50px;
+    position: center;
+    margin-right: 40px;
+}
+
+form label, p {
+    font-family: Gisha;
+    font-size: 20px;
+}
+
+#honey {
+    content: url('../images/contact/Honey.png');
+    position: absolute;
+    left: 10px;
+    top: 470px;
+}
+
+.asterix {
+    color: red;
+}
+
+#sendForm {
+    background-image: url(../images/contact/envelope.png);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position-x: 7px;
+    background-position-y: 7px;
+    text-align: right;
+    padding-right: 10px;
+    background-color: #52796F;
+    height: 40px;
+    width: 110px;
+    transition: 0.2s ease;
+    color: #FFF1E6;
+    font-weight: 900;
+    border: none;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+form #sendForm:hover {
+    background-color: #D0EFb1;
+    color: #5D3252;
+    cursor: pointer;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    background-position-x: -55px;
+    background-position-y: 8px;
+}
+
+form #sendForm:active {
+    background-color: white;
+}
+
+input[type=text], select {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 3px #ddd;
+}
+
+input[type=text]:focus, select:focus, textarea:focus {
+    box-shadow: 0px 0px 7px #CC6D2D;
+}
+
+form h2 {
+    line-height: 160%;
+}
+
+/*/*/ /*/*/ /*/*/ /*עמוד אודות*/ /*/*/ /*/*/ /*/*/
+
+/*תמונות פולרואיד עמוד אודות*/
+
+#leftPol {
+    cursor: not-allowed;
+}
+
+.Polaroid {
+    position: relative;
+    width: 20%;
+    float: right;
+    margin-right: 30px;
+}
+
+.poloA {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+}
+
+.hoverTxt {
+    background-image: url('../images/odot/marker.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 240px;
+    width: 190px;
+    transition: 0.4s ease;
+    opacity: 0;
+    position: absolute;
+    top: 22%;
+    -ms-transform: translate(-50%, -50%);
+}
+
+.Polaroid:hover .poloA {
+    opacity: 1;
+    transform: rotate(8deg);
+}
+
+.Polaroid:hover .hoverTxt {
+    opacity: 1;
+    transform: rotate(8deg);
+    margin-top: -15px;
+    margin-right: 30px;
+}
+
+.poloTxtA {
+    font-size: 20px;
+    font-family: Gisha;
+    padding: 16px 32px;
+    line-height: 160%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.picTitleA {
+    font-family: 'Gveret Levin AlefAlefAlef';
+    font-size: 15pt;
+    width: 100%;
+    margin-top: -60px;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+    text-align: center;
+}
+
+.Polaroid:hover .picTitleA {
+    opacity: 1;
+    transform: rotate(8deg);
+    margin-right: 10px;
+}
+
+#pagesList {
+    clear: both;
+    padding-top: 100px;
+
+}
+
+#teamPictures {
+    margin-right: 80px;
+    margin-top: -140px;
+}
+
+/*תוכן עמוד אודות*/
+
+.aboutBoxes {
+    background-color: #FFF8F3;
+    opacity: 0.85;
+    width: 750px;
+    position: relative;
+    padding: 20px 50px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+}
+
+.attributionP {
+    direction: ltr;
+}
+
+#name {
+    top: -175px;
+}
+
+#coursA {
+    list-style: none;
+    position: relative;
+    top: 10px;
+    padding-right: 0px;
+}
+
+#coursA li {
+    font-family: Gisha;
+    font-size: 14pt;
+    margin-bottom: 5px;
+}
+
+li.icon_logo {
+    background: url(../images/odot/location-mark-odot.png) no-repeat right top;
+    background-size: 30px;
+    height: 30px;
+    padding-right: 40px;
+    padding-top: 3px;
+}
+
+#pages {
+    margin-top: 300px;
+}
+
+/* פסקה*/
+.aboutBoxes p {
+    font-family: Gisha;
+    font-size: 14pt;
+    line-height: 160%;
+    text-align: justify;
+    padding-top: 20px;
+}
+
+#pagesList li {
+    background-color: #FFF8F3;
+    opacity: 0.85;
+    width: 129px;
+    height: 20px;
+    display: inline-block;
+    padding: 15px;
+    font-family: Gisha;
+    font-size: 14pt;
+    margin-right: 20px;
+}
+
+#pagesList a {
+    color: black;
+    text-decoration: none;
+}
+
+.listOfPages {
+    content: url('../images/design/location-mark.png');
+    display: inline-block;
+    float: right;
+    padding-left: 7px;
+    position: relative;
+    bottom: 4px;
+}
+
+#pagesList li:hover {
+    font-weight: bold;
+    position: relative;
+    bottom: 10px;
+}
+
+#pagesList {
+    position: relative;
+    top: -40px;
+    right: 50px;
+}
+
+#cinnamon {
+    content: url('../images/odot/cinnamon.png');
+    position: relative;
+    bottom: 200px;
+    right: 30px;
+    transform: rotate(40deg);
+}
+
+#hit:link {
+    color: teal;
+    font-family: gisha;
+}
+
+#hit:active {
+    color: steelblue;
+}
+
+#hit:visited {
+    color: purple;
+}
+
+/*/*/ /*/*/ /*/*/ /*עמוד מפת אתר*/ /*/*/ /*/*/ /*/*/
+
+#siteMap > ul {
+    list-style-image: url('../images/odot/location-mark-odot.png');
+}
+
+#siteMap li > ul {
+    list-style-image: url('../images/design/location-mark.png');
+}
+
+#siteMap li {
+    font-family: Gisha;
+    line-height: 160%;
+    text-align: justify;
+    font-size: 14pt;
+}
+
+.inner > li > a {
+    top: -4px;
+    position: relative;
+    right: 8px;
+    color: black;
+    cursor: not-allowed;
+}
+
+#mainlist li a {
+    cursor: not-allowed;
+}
+
+.white > a {
+    position: relative;
+    top: -9px;
+    right: -7px;
+    color: black;
+}
+
+#mainlist {
+    margin-right: 207px;
+    margin-top: -50px;
+}
+
+.ok {
+    cursor: pointer;
+}
+
+/*/*//*/נגישות/*//*/*/
+.accessibility {
+    position: absolute;
+}
+
+#skip {
+    position: absolute;
+    left: 300px;
+    top: 0;
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+    list-style: outside none;
+}
+
+#skip a {
+    position: absolute;
+    left: -99999px;
+    top: 30px;
+}
+
+#skip a:focus, #skip a:active {
+    position: relative;
+    left: 0;
+    z-index: 9999;
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    padding: 30px 45px;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: -4px !important;
+    font: bold 50px "Gisha", "Freesans", sans-serif !important;
+    color: #5D3252;
+    background: transparent url(transparent.png) repeat scroll 0 0;
+    border: 1px dotted #ffb4db;
+}
+
+.terms_title {
+    margin-bottom: 0;
+}
+
+.terms_body {
+    background-color: #FFF8F3;
+    width: 700px;
+    padding: 20px;
+    opacity: 0.85;
+    margin: 0 auto;
+}
+
+#cookies-control table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#cookies-control td, #cookies-control th {
+    border: 1px solid #dddddd;
+    padding: 8px;
+}
+
+#cookies-control .tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+/* The switch - the box around the slider */
+.switch-toggle {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    vertical-align: sub;
+}
+
+/* Hide default HTML checkbox */
+.switch-toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
