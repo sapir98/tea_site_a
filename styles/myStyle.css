@@ -1945,7 +1945,7 @@ li.x {
 
 .englandh3 {
     font-family: gishabd;
-    font-size: 16pt;
+    font-size: 20pt;
 }
 
 #whichdrink {
@@ -2555,6 +2555,7 @@ li.icon_logo {
     padding: 20px;
     opacity: 0.85;
     margin: 0 auto;
+    line-height: 180%;
 }
 
 #cookies-control table {
@@ -2634,4 +2635,21 @@ input:checked + .slider:before {
 
 .slider.round:before {
     border-radius: 50%;
+}
+
+.terms-link {
+    color: blue !important;
+}
+
+.terms-link:visited {
+    color: purple;
+}
+
+.terms-title{
+    font-family: gishabd;
+    font-size: 20pt;
+}
+
+#cookies-dialog{
+    line-height: 160%;
 }
