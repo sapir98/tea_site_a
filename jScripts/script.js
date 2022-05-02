@@ -28,6 +28,10 @@ $(function () {
         classes: {
             'ui-dialog-titlebar-close': 'hidden',
         },
+        //in dialog setting code
+        open: function(event, ui) {
+            $('.ui-widget-overlay').css({ opacity: '0.6' });
+        },
         modal: true
     })
 });
