@@ -2653,3 +2653,7 @@ input:checked + .slider:before {
 #cookies-dialog{
     line-height: 160%;
 }
+
+.ui-widget-overlay { /* you want this */
+    opacity:.1;
+}

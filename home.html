@@ -1,0 +1,242 @@
+﻿<!DOCTYPE html>
+<html lang="he">
+<head>
+
+    <meta charset="utf-8"/>
+    <title>מסע'לה תה | דף בית</title>
+    <meta name="description" content="דף הבית"/>
+    <meta name="keywords" content="תה"/>
+    <meta name="author" content="צוות מסע'לה תה- יערה דה-פריס, נועה כהן, עדי סמואל וספיר אשר"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css"
+          integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+
+    <link href="styles/reset.css" rel="stylesheet"/>
+    <link href="styles/myStyle.css" rel="stylesheet"/>
+    <link href="styles/jquery-ui.min.css" rel="stylesheet"/>
+
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <script src="jScripts/jquery-ui.min.js"></script>
+    <script src="jScripts/script.js"></script>
+    <link rel="icon" href="images/design/cupLogo.png"/>
+
+</head>
+<body onload="mapshow()">
+
+<div id="container">
+    <header>
+        <div id="headdesign">
+            <a href="home.html" id="logohiper">
+                <div id="logo"><h1 alt="דף הבית מסעלה תה"></h1></div>
+            </a>
+            <p>מסע תה מסביב לעולם</p>
+        </div>
+        <div id="skip">
+            <a href="#content-anchor">דלג לתוכן</a>
+        </div>
+        <nav id="navigation" role="navigation" title="תפריט ראשי">
+            <ul id="menu">
+                <li class="left"><a href="home.html">דף הבית</a></li>
+                <li class="left">
+                    <a href="#">מדינות</a>
+                    <ul id="country">
+                        <li><a href="#">אוסטרליה</a><span class="loc" Aria-hidden=true></span></li>
+                        <li><a href="#">הודו</a><span class="loc" Aria-hidden=true></span></li>
+                        <li><a href="#">יפן</a><span class="loc" Aria-hidden=true></span></li>
+                        <li><a href="#">פורטוגל</a><span class="loc" Aria-hidden=true></span></li>
+                        <li class="allowed"><a href="england.html" class="allowed">אנגליה</a><span class="loc"
+                                                                                                   Aria-hidden=true></span>
+                        </li>
+                        <li><a href="#">טורקיה</a><span class="loc" Aria-hidden=true></span></li>
+                        <li><a href="#">מצרים</a><span class="loc" Aria-hidden=true></span></li>
+                        <li><a href="#">פרו</a><span class="loc" Aria-hidden=true></span></li>
+                        <li><a href="#">ארגנטינה</a><span class="loc" Aria-hidden=true></span></li>
+                        <li><a href="#">טיבט</a><span class="loc" Aria-hidden=true></span></li>
+                        <li><a href="#">מרוקו</a><span class="loc" Aria-hidden=true></span></li>
+                        <li><a href="#">פרס</a><span class="loc" Aria-hidden=true></span></li>
+                        <li><a href="#">דרום אפריקה</a><span class="loc" Aria-hidden=true></span></li>
+                        <li><a href="#">טיוואן</a><span class="loc" Aria-hidden=true></span></li>
+                        <li><a href="#">סין</a><span class="loc" Aria-hidden=true></span></li>
+                        <li><a href="#">קניה</a><span class="loc" Aria-hidden=true></span></li>
+                    </ul>
+                </li>
+                <li class="left">
+                    <a href="index.html">נפלאות התה</a>
+                    <ul id="Families">
+                        <li><a href="index.html#b">תה שחור</a><span class="loc" Aria-hidden=true></span></li>
+                        <li><a href="index.html#w">תה לבן</a><span class="loc" Aria-hidden=true></span></li>
+                        <li><a href="index.html#g">תה ירוק</a><span class="loc" Aria-hidden=true></span></li>
+                        <li><a href="index.html#o">תה אלונוג</a><span class="loc" Aria-hidden=true></span></li>
+                        <li><a href="index.html#r">תה אדום</a><span class="loc" Aria-hidden=true></span></li>
+                        <li><a href="index.html#y">תה צהוב</a><span class="loc" Aria-hidden=true></span></li>
+                        <li><a href="index.html#i">חליטות התה</a><span class="loc" Aria-hidden=true></span></li>
+
+                    </ul>
+                </li>
+                <li class="left"><a href="#" class="notallowed">לחשוב מחוץ לכוס</a></li>
+                <li><a href="#" class="notallowed">טיפים לכוס המושלמת</a></li>
+            </ul>
+        </nav>
+        <script>
+            window.onscroll = function () {
+                scrollFunction()
+            };
+
+            function scrollFunction() {
+                if (document.documentElement.scrollTop > 180) {
+                    document.getElementById("navigation").style.top = "0px";
+                    document.getElementById("navigation").style.position = "fixed";
+                } else {
+                    document.getElementById("navigation").style.top = "120px";
+                    document.getElementById("navigation").style.position = "absolute";
+                }
+            }
+        </script>
+        <br/><br/><br/>
+
+    </header>
+    <a name="content-anchor" class="accessibility"></a>
+    <article id="z_level_index" role="main">
+        <div id="topHomepage">
+            <span id="Homelines"></span>
+            <img id="paper" height="350" width="1100" src="images/homePage/paper.png"/>
+            <div class="switch">
+                <input type="radio" class="switch-input" name="button" value="def" id="def" checked
+                       onclick="myFunction1()">
+                <label for="def" class="switch-label switch-label-off">מפה</label>
+                <input type="radio" class="switch-input" name="button" value="list" id="list" onclick="myFunction2()">
+                <label for="list" class="switch-label switch-label-on">רשימה</label>
+                <span class="switch-selection"></span>
+            </div>
+            <div id="mapDIV">
+                <ul id="mapULcountry">
+                    <li id="aus-li"><a href="#">אוסטרליה</a><span id="aus-map" Aria-hidden=true></span></li>
+                    <li id="ind-li"><a href="#">הודו</a><span id="ind-map" Aria-hidden=true></span></li>
+                    <li id="jap-li"><a href="#">יפן</a><span id="jap-map" Aria-hidden=true></span></li>
+                    <li id="por-li"><a href="#">פורטוגל</a><span id="por-map" Aria-hidden=true></span></li>
+                    <li id="eng-li"><a href="england.html" class="viseng"><p id="myp">אנגליה</p><span id="eng-map"
+                                                                                                      Aria-hidden=true></span></a>
+                    </li>
+                    <li id="tur-li"><a href="#">טורקיה</a><span id="tur-map" Aria-hidden=true></span></li>
+                    <li id="egy-li"><a href="#">מצרים</a><span id="egy-map" Aria-hidden=true></span></li>
+                    <li id="per-li"><a href="#">פרו</a><span id="per-map" Aria-hidden=true></span></li>
+                    <li id="arg-li"><a href="#">ארגנטינה</a><span id="arg-map" Aria-hidden=true></span></li>
+                    <li id="tib-li"><a href="#">טיבט</a><span id="tib-map" Aria-hidden=true></span></li>
+                    <li id="mor-li"><a href="#">מרוקו</a><span id="mor-map" Aria-hidden=true></span></li>
+                    <li id="ira-li"><a href="#">פרס</a><span id="ira-map" Aria-hidden=true></span></li>
+                    <li id="soth-li"><a href="#">דרום אפריקה</a><span id="soth-map" Aria-hidden=true></span></li>
+                    <li id="tai-li"><a href="#">טיוואן</a><span id="tai-map" Aria-hidden=true></span></li>
+                    <li id="chi-li"><a href="#">סין</a><span id="chi-map" Aria-hidden=true></span></li>
+                    <li id="ken-li"><a href="#">קניה</a><span id="ken-map" Aria-hidden=true></span></li>
+                </ul>
+            </div>
+            <div id="listDIV">
+                <ul id="listULcountry">
+                    <li><a href="#">אוסטרליה</a><span id="aus" Aria-hidden=true></span></li>
+                    <li><a href="#">הודו</a><span id="ind" Aria-hidden=true></span></li>
+                    <li><a href="#">יפן</a><span id="jap" Aria-hidden=true></span></li>
+                    <li><a href="#">פורטוגל</a><span id="por" Aria-hidden=true></span></li>
+                    <li class="allowed"><a href="england.html" class="allowed">אנגליה<span id="eng" class="allowed"
+                                                                                           Aria-hidden=true></span></a>
+                    </li>
+                    <li><a href="#">טורקיה</a><span id="tur" Aria-hidden=true></span></li>
+                    <li><a href="#">מצרים</a><span id="egy" Aria-hidden=true></span></li>
+                    <li><a href="#">פרו</a><span id="per" Aria-hidden=true></span></li>
+                    <li><a href="#">ארגנטינה</a><span id="arg" Aria-hidden=true></span></li>
+                    <li><a href="#">טיבט</a><span id="tib" Aria-hidden=true></span></li>
+                    <li><a href="#">מרוקו</a><span id="mor" Aria-hidden=true></span></li>
+                    <li><a href="#">פרס</a><span id="ira" Aria-hidden=true></span></li>
+                    <li><a href="#">דרום אפריקה</a><span id="soth" Aria-hidden=true></span></li>
+                    <li><a href="#">טיוואן</a><span id="tai" Aria-hidden=true></span></li>
+                    <li><a href="#">סין</a><span id="chi" Aria-hidden=true></span></li>
+                    <li><a href="#">קניה</a><span id="ken" Aria-hidden=true></span></li>
+                </ul>
+            </div>
+            <p id="actioncall">לחצו על דגל כדי לחקור את התה במדינה</p>
+            <span id="picarrow"></span>
+        </div>
+        <a href="indexnew.html" id="accessibility_bt" title="כפתור נגישות ">
+            <img src="images/homePage/תמונה1.png" width="50"/>
+            <p>נגישות</p>
+
+        </a>
+        <span id="basket"></span>
+        <span id="sugar"></span>
+        <h2 id="more">עוד באתר</h2>
+
+
+        <div id="contentFloat">
+
+            <a href="index.html">
+                <div class="floatPolaroid">
+                    <img src="images/homePage/Polo3.png" alt="polaroid" class="polo">
+                    <div class="marker" id="firpol">
+                        <div class="poloTxt">
+                            תתעוררו על עצמכם! תה יכול להכיל קפאין- והרבה! הכנסו כדי לגלות איזה
+                        </div>
+                    </div>
+                    <div class="picTitle" id="firstpolo">חייבים קפאין להתנעת היום?</div>
+                </div>
+            </a>
+            <a href="england.html">
+                <div class="floatPolaroid">
+                    <img src="images/homePage/Polo2.png" alt="paloroid" class="polo">
+                    <div class="marker">
+                        <div class="poloTxt">איך שותים תה כמו בחצר המלכה?</div>
+                    </div>
+                    <div class="picTitle" id="secpolo">לאנשים שאוהבים חלב בתה</div>
+                </div>
+            </a>
+            <div class="floatPolaroid" id="leftPol">
+                <img src="images/homePage/Polo1.png" alt="polaroid" class="polo">
+                <div class="marker">
+                    <div class="poloTxt">
+                        אוכלים את הראש מה להכין? פשוט תאכלו תה.
+                    </div>
+                </div>
+                <div class="picTitle" id="thirdpolo">תה לא רק בספלים</div>
+            </div>
+        </div>
+
+        <script>
+            function mapshow() {
+                var l = document.getElementById("listDIV");
+                var M = document.getElementById("mapDIV");
+                l.style.display = "none";
+                M.style.display = "block";
+            }
+
+            function myFunction1() {
+                var l = document.getElementById("listDIV");
+                var M = document.getElementById("mapDIV");
+                l.style.display = "none";
+                M.style.display = "block";
+            }
+
+            function myFunction2() {
+                var l = document.getElementById("listDIV");
+                var M = document.getElementById("mapDIV");
+                l.style.display = "block";
+                M.style.display = "none";
+            }
+        </script>
+    </article>
+    <br/> <br/>
+    <footer role="contentinfo">
+        <nav id="navfooter" role="navigation" aria-label="תפריט ניווט תחתון">
+            <span id="miniLogo"></span>
+            <ul>
+                <li class="leftie"><a href="about.html" target="_self">אודות</a></li>
+                <li class="leftie"><a href="siteMap.html" target="_self">מפת אתר</a></li>
+                <li><a href="contactUs.html" target="_self">צור קשר</a></li>
+            </ul>
+            <p>© כל הזכויות שמורות לצוות מסע'לה תה</p>
+        </nav>
+    </footer>
+</div>
+</body>
+</html>
